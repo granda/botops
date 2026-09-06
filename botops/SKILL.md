@@ -1,6 +1,6 @@
 ---
 name: botops
-description: "The single BotOps lifecycle for Matthew's Grok Bot fleet: CoS \u2192 L2 \u2192 L3 (one-shot temps + cadence runners); Notion as source of record; emoji \ud83d\udd04/\ud83d\udd14/\ud83d\uddd1/\ud83d\udc80; swarm channels kept while cadence is live. Use for every non-trivial Matthew ask \u2014 do not split into other lifecycle skills."
+description: "The single BotOps lifecycle for Matthew's Grok Bot fleet: CoS → L2 → L3 (one-shot temps + cadence runners); Notion as source of record; emoji 🔄/🔔/🗑/💀; swarm channels kept while cadence is live. Use for every non-trivial Matthew ask — do not split into other lifecycle skills."
 ---
 
 # BotOps
@@ -73,3 +73,7 @@ Durable L1/L2 names stay plain. Spawn as `🔄 <title>`. Cadence runners stay `�
 ## Quiet
 
 CoS quiet when nothing to decide. L2 quiet toward Matthew. Swarm noise stays in the channel. Cadence fires with zero findings stay quiet toward Matthew.
+
+## References
+
+Diagrams and longer notes (load on demand): [layers](references/layers.md), [happy path](references/happy-path.md), [emoji lifecycle](references/emoji-lifecycle.md), [cadence](references/cadence.md), [swarms](references/swarms.md), [rules](references/rules.md).
