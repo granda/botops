@@ -1,7 +1,8 @@
 ---
-name: BotOps
-description: "Use for every non-trivial Matthew ask — the single BotOps lifecycle: CoS → L2 → L3 (temps + cadence runners); Notion SoR; emoji \U0001F504/\U0001F514/\U0001F5D1/\U0001F480; swarm channels kept while cadence live then CoS tells Matthew to delete."
+name: botops
+description: The single BotOps lifecycle for Matthew's Grok Bot fleet: CoS → L2 → L3 (one-shot temps + cadence runners); Notion as source of record; emoji 🔄/🔔/🗑/💀; swarm channels kept while cadence is live. Use for every non-trivial Matthew ask — do not split into other lifecycle skills.
 ---
+
 # BotOps
 
 **The single skill** for Matthew’s bot fleet. Use on any non-trivial ask. Do not split this into other lifecycle skills.

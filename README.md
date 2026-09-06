@@ -1,10 +1,15 @@
-# BotOps
+# BotOps (private)
 
-The BotOps skill for Matthew’s Grok Bot fleet: CoS → L2 → L3 lifecycle, Notion as source of record, and emoji status for disposable agents.
+Agent Skill for Matthew’s Grok Bot fleet, shaped to the [Agent Skills](https://agentskills.io/specification) standard.
 
-## Skill
+## Skill layout
 
-See [`SKILL.md`](./SKILL.md). Keep this file faithful when updating — do not rewrite BotOps into other lifecycle skills.
+```
+botops/
+└── SKILL.md
+```
+
+Install / load the skill directory `botops/` (name must match frontmatter `name: botops`).
 
 ## How I Run Grok Bot
 
@@ -16,3 +21,9 @@ Context and narrative live in the blog post **How I Run Grok Bot** (slug: `how-i
 ## Visibility
 
 This repository is **private**. Do not make it public unless Matthew explicitly says so.
+
+## Validate
+
+```bash
+npx skills-ref validate ./botops
+```
