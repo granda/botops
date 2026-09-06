@@ -73,3 +73,7 @@ Durable L1/L2 names stay plain. Spawn as `ðŸ”„ <title>`. Cadence runners stay `ð
 ## Quiet
 
 CoS quiet when nothing to decide. L2 quiet toward Matthew. Swarm noise stays in the channel. Cadence fires with zero findings stay quiet toward Matthew.
+
+## References
+
+Diagrams and longer notes (load on demand): [layers](references/layers.md), [happy path](references/happy-path.md), [emoji lifecycle](references/emoji-lifecycle.md), [cadence](references/cadence.md), [swarms](references/swarms.md), [rules](references/rules.md).

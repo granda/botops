@@ -4,7 +4,7 @@ The BotOps lifecycle skill for Matthew’s Grok Bot fleet, shaped to the [Agent 
 
 It is the single lifecycle for that fleet: Chief of Staff (L1) → domain owners (L2) → one-shot temps and cadence runners (L3), with Notion as the source of record. Load this skill for non-trivial fleet work rather than splitting the lifecycle across other skills.
 
-Operating model at a glance below. Fuller diagrams and facts live in [`refs/`](refs/). Narrative: **[How I Run Grok Bot with BotOps](https://granda.org/en/2026/09/06/how-i-run-grok-bot/)**.
+Operating model at a glance below. Fuller diagrams and facts live in [`botops/references/`](botops/references/). Narrative: **[How I Run Grok Bot with BotOps](https://granda.org/en/2026/09/06/how-i-run-grok-bot/)**.
 
 ## Operating model
 
@@ -30,7 +30,7 @@ Backlog → Ready → In progress → Waiting / Blocked → In review → Done /
 - No new durable L2 until Matthew says yes.
 - CoS chat stays decision-dense: intake, assignment, ticket link — no browse logs or play-by-play.
 
-See [four layers](refs/layers.md) and [hard rules + quiet default](refs/rules.md).
+See [four layers](botops/references/layers.md) and [hard rules + quiet default](botops/references/rules.md).
 
 ## Happy path (one-shot)
 
@@ -46,7 +46,7 @@ flowchart TB
     hpCoS2M --> hpMe2M["Matthew gets ticket URL"]
 ```
 
-More: [refs/happy-path.md](refs/happy-path.md).
+More: [botops/references/happy-path.md](botops/references/happy-path.md).
 
 ## L3 emoji lifecycle
 
@@ -75,7 +75,7 @@ stateDiagram-v2
     Dead --> [*]
 ```
 
-More: [refs/emoji-lifecycle.md](refs/emoji-lifecycle.md).
+More: [botops/references/emoji-lifecycle.md](botops/references/emoji-lifecycle.md).
 
 ## Cadence runners
 
@@ -93,7 +93,7 @@ flowchart TB
     cadCoS --> cadMe["Ticket link to Matthew"]
 ```
 
-More: [refs/cadence.md](refs/cadence.md).
+More: [botops/references/cadence.md](botops/references/cadence.md).
 
 ## Swarm channels
 
@@ -121,16 +121,23 @@ flowchart TB
     style swCh fill:transparent,stroke:#888
 ```
 
-One-shot vs standing cadence swarms: [refs/swarms.md](refs/swarms.md).
+One-shot vs standing cadence swarms: [botops/references/swarms.md](botops/references/swarms.md).
 
 ## Skill layout
 
 ```
 botops/
-└── SKILL.md
+├── SKILL.md
+└── references/
+    ├── layers.md
+    ├── happy-path.md
+    ├── emoji-lifecycle.md
+    ├── cadence.md
+    ├── swarms.md
+    └── rules.md
 ```
 
-The skill directory is `botops/`. Its folder name must match frontmatter `name: botops`. `SKILL.md` is the lean Agent Skills lifecycle doc. Public diagrams live in [`refs/`](refs/), not in the skill.
+The skill directory is `botops/`. Its folder name must match frontmatter `name: botops`. `SKILL.md` is the lean Agent Skills lifecycle doc. Long Mermaid and key-fact pages live in [`botops/references/`](botops/references/) (the Agent Skills `references/` directory).
 
 ## Install / usage
 
